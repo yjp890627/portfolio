@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --FONT-COLOR: white;
+}
+
+body {
+  background-color: black;
+  /* overflow: hidden; */
+}
+
+#nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  scroll-behavior: smooth;
+}
+
+#nav li {
+  display: inline-block;
+  margin: 0px 60px 35px 0px;
+  font-size: 32px;
+}
+
+#nav li a {
+  color: var(--FONT-COLOR);
+  text-decoration: none;
+}
+
+#work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--FONT-COLOR);
+}
+
+section {
+  background-image: radial-gradient(ellipse at center top, #eede828c, transparent 60%);
+  background-size: 100% 200%;
+  background-position: 20% 50%;
+}
+
+.frame {
+  margin: 50px auto;
+  border: 25px solid rgba(34, 34, 34, 0.902);
+  height: 530px;
+  width: 395px;
+  -webkit-box-shadow: px 2px 3px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.border {
+  background: whitesmoke;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: inset 10px 10px 10px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 3px 7px 13px 14px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  position: absolute;
+  height: 350px;
+  width: 250px;
+  margin-left: 50px;
+  margin-top: 50px;
+  -webkit-box-shadow: inset 10px 10px 10px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px inset #c9c9c9;
+}
+
+.text {
+  position: absolute;
+  margin-top: 420px;
+  font-family: "Playball", cursive;
+  font-size: 30px;
+  margin-left: 85px;
+  color: black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 850px;
+  position: relative;
+  margin: auto;
+  top: -30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  width: auto;
+  margin-top: -12px;
+  padding: 0px 8px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0.2;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* Fading animation */
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#firstSlide {
+  animation-name: fade;
+  animation-duration: 6s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
